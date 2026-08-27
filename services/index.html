@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Assistance | The State of Cybersecurity</title>
+  <meta name="description" content="Hands-on security help from practitioner Parker Brissette: frameworks, ransomware readiness, cloud architecture, detection engineering, AI governance, and email authentication.">
+  <link rel="canonical" href="https://thestateofcybersecurity.us/services/">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The State of Cybersecurity">
+  <meta property="og:title" content="Request Assistance">
+  <meta property="og:description" content="Hands-on security help from a working practitioner.">
+  <meta property="og:url" content="https://thestateofcybersecurity.us/services/">
+  <meta property="og:image" content="https://thestateofcybersecurity.us/og.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Spline+Sans+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="site-head-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">TS/OC</span>
+      <span class="brand-name">The State of Cybersecurity</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="/toolkit/">Toolkit</a>
+      <a href="/briefing/">Briefing</a>
+      <a href="/services/" aria-current="page">Services</a>
+      <a class="nav-cta" href="#request">Request help</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <div class="page-head">
+    <p class="eyebrow">Hands-on assistance</p>
+    <h1>Request assistance</h1>
+    <p class="lede">
+      Two decades in the field: incident command, SOC leadership, cloud security architecture,
+      and the unglamorous work of making frameworks stick. If your problem is on this list,
+      I can probably help. If it is not, I will say so and point you to someone who can.
+    </p>
+  </div>
+
+  <section>
+    <div class="assist-layout">
+      <ul class="service-list">
+        <li><strong>Security programs &amp; frameworks.</strong> NIST CSF 2.0 and CIS Controls alignment, one unified control set instead of four parallel compliance programs.</li>
+        <li><strong>Ransomware readiness.</strong> Structured assessment of your backup, identity, and response posture before an attacker grades it for you.</li>
+        <li><strong>Cloud security architecture.</strong> AWS, Azure, and GCP reviews, zero trust design, identity and privileged access. Pragmatic about what lean teams can actually operate.</li>
+        <li><strong>Detection &amp; SOC operations.</strong> Detection engineering and alert tuning that cuts noise instead of adding to it. I still write the queries myself.</li>
+        <li><strong>AI security &amp; governance.</strong> Risk-tiering AI use cases and putting real controls around LLM applications, not just a policy PDF.</li>
+        <li><strong>Email authentication.</strong> SPF, DKIM, and DMARC to enforcement without breaking your mail flow.</li>
+        <li><strong>Speaking &amp; media.</strong> Podcasts, panels, and webinars on plain-English security, AI governance, and building in public.</li>
+      </ul>
+
+      <div class="form-panel" id="request">
+        <h2>Tell me what is going on</h2>
+        <form id="assist-form" class="stack-form" novalidate>
+          <div class="field">
+            <label for="req-name">Name</label>
+            <input id="req-name" name="name" type="text" required autocomplete="name" maxlength="120">
+          </div>
+          <div class="field">
+            <label for="req-email">Email</label>
+            <input id="req-email" name="email" type="email" required autocomplete="email" maxlength="254">
+          </div>
+          <div class="field">
+            <label for="req-org">Organization <span class="optional">(optional)</span></label>
+            <input id="req-org" name="org" type="text" autocomplete="organization" maxlength="160">
+          </div>
+          <div class="field">
+            <label for="req-service">What do you need?</label>
+            <select id="req-service" name="service" required>
+              <option value="" selected disabled>Choose one</option>
+              <option>Security program and frameworks</option>
+              <option>Ransomware readiness</option>
+              <option>Cloud security architecture</option>
+              <option>Detection and SOC operations</option>
+              <option>AI security and governance</option>
+              <option>Email authentication (SPF/DKIM/DMARC)</option>
+              <option>Speaking or media</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="req-message">The situation</label>
+            <textarea id="req-message" name="message" rows="5" required maxlength="4000" placeholder="What is going on, what have you tried, and what does good look like?"></textarea>
+          </div>
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">Send the request</button>
+          <p class="form-note">Goes straight to my inbox. No retainer talk until we both think it is a fit. <a href="/privacy/">Privacy</a>.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">TS/OC</span>
+        <span class="brand-name">The State of Cybersecurity</span>
+      </a>
+      <p>Plain-English security writing, vetted tools, and hands-on help. Written and built by Parker Brissette.</p>
+    </div>
+    <div class="foot-col">
+      <h3>Site</h3>
+      <a href="/toolkit/">Toolkit</a>
+      <a href="/briefing/">Briefing</a>
+      <a href="/services/">Services</a>
+    </div>
+    <div class="foot-col">
+      <h3>More projects</h3>
+      <a href="https://www.cybersecurityalphabetsoup.com/">Alphabet Soup glossary</a>
+      <a href="https://www.cybersecurityalphabetsoup.com/news/">Security news feed</a>
+      <a href="https://www.cybersecurityalphabetsoup.com/blog/">Briefing archive</a>
+      <a href="https://thestateofcybersecurity.github.io/cyberdle/">Cyberdle</a>
+      <a href="https://mitre.cybersecurityalphabetsoup.com/">MITRE ATT&amp;CK Adventure</a>
+      <a href="https://bia.cybersecurityalphabetsoup.com/">BIA Builder</a>
+    </div>
+    <div class="foot-col">
+      <h3>Contact &amp; legal</h3>
+      <a href="mailto:parker@thestateofcybersecurity.us">Email Parker</a>
+      <a href="https://www.linkedin.com/in/parkerbrissette" rel="me noopener" target="_blank">LinkedIn</a>
+      <a href="https://www.tiktok.com/@thecybersecuritydad" rel="me noopener" target="_blank">TikTok</a>
+      <a href="https://github.com/thestateofcybersecurity" rel="me noopener" target="_blank">GitHub</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/disclosure/">Disclosure</a>
+    </div>
+  </div>
+  <p class="foot-fine">&copy; 2026 Parker Brissette. Some outbound links are affiliate links; see the <a href="/disclosure/">disclosure</a>.</p>
+</footer>
+
+<script src="/main.js" defer></script>
+</body>
+</html>
